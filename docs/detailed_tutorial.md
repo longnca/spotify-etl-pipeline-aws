@@ -26,18 +26,25 @@ python -m venv venv  # This will create a virtual environment named 'venv'
 
 You might get the error `CategoryInfo : SecurityError: (:) [], PSSecurityException` when trying to activate the `venv` due to PowerShell's execution policy. If you get that error, then you should temporarily change the execution policy to allow the activation script to run:
 
-- Open PowerShell as an Administrator.
+- Open PowerShell (not Terminal or CMD in Windows) as an Administrator.
 - Execute the following command: `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`.
 - There's a message to ask you to confirm about "Execution Policy Change", enter "Y" (Yes).
 - After changing the execution policy, try activating your virtual environment again: `.\venv\Scripts\Activate.ps1`.
 - Once you are done working in the virtual environment and no longer need to run scripts, you can revert back to the default policy by running: `Set-ExecutionPolicy Restricted -Scope CurrentUser`.
 
-### 2. Install Spotify library
+### 2. Install libraries (Spotipy)
 
-Once the environment is activated, you can install the `spotipy` library (Note that it's **Spotipy**, not Spotify) using pip:
+Once the environment is activated, you can install the `spotipy` library (Note that it's **Spotipy**, not Spotify) and other libraries if needed (e.g. `pandas`) using pip:
 
 ```bash
 pip install spotipy 
+pip install pandas
+```
+
+**Verify installation:** After installation, you can verify that Pandas has been installed correctly in your virtual environment by running:
+
+```bash
+pip list
 ```
 
 ### 3. Create a Spotify App
