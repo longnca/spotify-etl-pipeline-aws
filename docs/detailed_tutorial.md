@@ -61,3 +61,12 @@ pip list
 
 - On the Dashboard of the new app, click on "**Settings**".
 - Check the information of "Client ID" and "Client secret". We will use them for Python scripting.
+
+### 4. Explore the data in Jupyter Notebook
+
+### 5. Set up AWS
+#### 5.1. AWS S3
+
+#### 5.2. AWS Lambda
+
+### 6. Create Lambda function for Extractiion
