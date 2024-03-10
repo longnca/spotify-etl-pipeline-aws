@@ -69,4 +69,4 @@ pip list
 
 #### 5.2. AWS Lambda
 
-### 6. Create Lambda function for Extractiion
+### 6. Create Lambda function for Extraction
