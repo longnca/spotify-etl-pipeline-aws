@@ -12,4 +12,4 @@ In this tutorial, I've completed an end-to-end ETL pipeline for Spotify data:
 1. Set up the crawlers using **AWS Glue** to get data from S3 and then populate the AWS Glue Data Catalog with tables.
 1. Use **AWS Athena** to run SQL queries for analytical purposes.
 
-Check out the [detailed tutorial](./docs/detailed_tutorial.md)
+Check out the detailed tutorial [here](./docs/detailed_tutorial.md).
