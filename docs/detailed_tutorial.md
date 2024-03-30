@@ -65,8 +65,28 @@ pip list
 ### 4. Explore the data in Jupyter Notebook
 
 ### 5. Set up AWS
+
 #### 5.1. AWS S3
+
+- Create a new S3 bucket, e.g. "spotify-etl-project-2024".
+- In this S3 bucket, create two folders and subfolders as the below structure:
+
+```
+|spotify-etl-project-2024 (bucket)
+|---|raw_data
+|------|to_processed # staging folder to store the raw data from Spotify API
+|------|processed # store the data after processing
+|---|transformed_data
+|------|album_data
+|------|artist_data
+|------|song_data
+```
 
 #### 5.2. AWS Lambda
 
-### 6. Create Lambda function for Extraction
+- Create a new Lambda function, e.g. "spotify_api_data_extract".
+
+
+### 6. Extraction Process
+
+
