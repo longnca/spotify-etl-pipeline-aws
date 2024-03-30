@@ -6,7 +6,6 @@ import boto3
 from datetime import datetime
 
 def lambda_handler(event, context):
-    
 
     client_id = os.environ.get('client_id')
     client_secret = os.environ.get('client_secret')
